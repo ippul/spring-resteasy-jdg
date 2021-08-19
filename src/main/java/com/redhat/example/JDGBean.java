@@ -25,7 +25,7 @@ public class JDGBean {
             //
             org.infinispan.client.hotrod.configuration.ConfigurationBuilder builder = new org.infinispan.client.hotrod.configuration.ConfigurationBuilder();
             builder.addServer()
-            .host("localhost")
+            .host("datagrid-app-hotrod")
             .port(11333)
             .maxRetries(5)
             .socketTimeout(80000)
