@@ -17,7 +17,7 @@ public class JDGBean {
     public void init() {
         //
         
-        remoteCache = (RemoteCache) getCacheContainer().getCache("teams");
+        remoteCache = (RemoteCache) getCacheContainer().getCache("simple");
     }
 
     private BasicCacheContainer getCacheContainer() {
