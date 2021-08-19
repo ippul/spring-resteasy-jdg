@@ -1,0 +1,7 @@
+<jboss-deployment-structure>
+    <deployment>
+        <dependencies>
+            <module name="io.netty" slot="main" export="true" meta-inf="export"/>
+        </dependencies>
+    </deployment>
+</jboss-deployment-structure>
