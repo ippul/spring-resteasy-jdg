@@ -15,14 +15,11 @@ public class JDGBean {
 
     @PostConstruct
     public void init() {
-        //
-        
         remoteCache = (RemoteCache) getCacheContainer().getCache("simple");
     }
 
     private BasicCacheContainer getCacheContainer() {
         if (manager == null) {
-            //
             org.infinispan.client.hotrod.configuration.ConfigurationBuilder builder = new org.infinispan.client.hotrod.configuration.ConfigurationBuilder();
             builder.addServer()
             .host("datagrid-app-hotrod")
